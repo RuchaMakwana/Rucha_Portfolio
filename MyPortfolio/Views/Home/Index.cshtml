@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container full-height">
+    <div class="card-wrapper">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <img src="/images/devloper.png" alt="Profile Image" class="profile-image" />
+            <h2 class="name">RUCHA</h2>
+            <p class="role">
+                <span id="slider-text">Developer</span>
+            </p>
+            <div class="button-group">
+                <a class="btn btn-custom" href="javascript:void(0);" onclick="toggleAbout()">About Me</a>
+            </div>
+            <div class="button-row">
+                @* <a href="#" class="btn-custom">Download CV</a> *@
+                @* <a href="#" class="btn-custom">Contact Me</a> *@
+                <a class="btn btn-custom" href="javascript:void(0);" onclick="toggleDownloadCV()">Download CV</a>
+                <a class="btn btn-custom" href="javascript:void(0);" onclick="toggleContactME()">Contact ME</a> 
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section" id="about-section">
+            <span class="close-btn" onclick="toggleAbout()">×</span>
+            <h2>About Me</h2>
+            <p>Hey... I'm Rucha, a passionate developer!</p>
+            <p> "I am a versatile developer with hands-on experience in frontend and backend development. I focus on building dynamic, user-friendly web applications. With expertise in frontend and backend development, I deliver solutions that are both visually engaging and technically sound."</p>
+        </div>
+    </div>
+</div>

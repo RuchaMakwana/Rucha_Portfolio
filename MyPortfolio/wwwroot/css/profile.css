@@ -1,0 +1,115 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #a3c3db;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #a3c3db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    position: relative;
+}
+
+.profile-card,
+.about-section {
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.role {
+    font-size: 20px;
+    color: green;
+    margin-bottom: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider-text {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.button-group {
+    margin: 10px 0;
+}
+
+.btn-custom {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .btn-custom:hover {
+        background-color: #218838;
+    }
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.about-section {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    visibility: hidden;
+}
+
+    .about-section.active {
+        transform: scaleX(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
