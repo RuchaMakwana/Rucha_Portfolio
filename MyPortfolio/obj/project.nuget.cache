@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aXo+CRRW6Bc=",
+  "dgSpecHash": "0gkoNj1JMQ0=",
   "success": true,
   "projectFilePath": "D:\\Rucha_Portfolio\\MyPortfolio\\MyPortfolio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\devm6\\.nuget\\packages\\microsoft.build.tasks.git\\8.0.0\\microsoft.build.tasks.git.8.0.0.nupkg.sha512",
+    "C:\\Users\\devm6\\.nuget\\packages\\microsoft.sourcelink.common\\8.0.0\\microsoft.sourcelink.common.8.0.0.nupkg.sha512",
+    "C:\\Users\\devm6\\.nuget\\packages\\microsoft.sourcelink.github\\8.0.0\\microsoft.sourcelink.github.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
